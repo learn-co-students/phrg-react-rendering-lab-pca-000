@@ -66,3 +66,4 @@ By the end of this section, the test under `<Pikachu />` should be passing.
 - [React: Component Specs and Lifecycle](https://github.com/learn-co-curriculum/react-rendering)
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-rendering-lab'>Rendering Lab</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>PHRG React Rendering</p>
