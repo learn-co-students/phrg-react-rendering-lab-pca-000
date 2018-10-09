@@ -1,11 +1,11 @@
 import React from 'react';
 import Circle from './Circle';
 
-class Circles extends React.Component {
+export default class Circles extends React.Component {
 
   constructor(props) {
     super(props);
-    
+
     this.state = {
       circles: [
         { color: 'red' },
@@ -26,8 +26,8 @@ class Circles extends React.Component {
   }
 
   render() {
-    const renderCircles = this.state.circles.map((circle, index) => 
-      <Circle color={circle.color} key={index} /> 
+    const renderCircles = this.state.circles.map((circle, index) =>
+      <Circle color={circle.color} key={index} />
     );
 
     return (
@@ -38,5 +38,3 @@ class Circles extends React.Component {
     );
   }
 }
-
-export default Circles;

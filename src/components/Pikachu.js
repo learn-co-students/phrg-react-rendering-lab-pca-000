@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Pikachu extends React.Component {
+export default class Pikachu extends React.Component {
 
   constructor(props) {
     super(props);
@@ -9,7 +9,11 @@ class Pikachu extends React.Component {
       size: 100
     };
   }
-  
+
+  componentDidUpdate() {
+    this.resizePikachu()
+  }
+
   resizePikachu = () => {
     const pikachu = document.getElementById("pikachu");
     pikachu.height = this.state.size;
@@ -37,5 +41,3 @@ class Pikachu extends React.Component {
     )
   }
 }
-
-export default Pikachu;
